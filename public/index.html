@@ -6,52 +6,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jesse Folkers | home</title>
     <link rel="stylesheet" href="css/styling.css">
-    <link rel="shortcut icon" href="../src/images/favicons/poppetje.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="src/images/favicons/poppetje.ico" type="image/x-icon">
 </head>
 
 <body>
     <nav>
         <a href="index.html">
-            <img src="../src/images/logo.png" alt="Logo" style="height: 50px;">
+            <img src="src/images/logo.png" alt="Logo" style="height: 50px;">
         </a>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">Projects</a></li>
-            <li><a href="portfolio.html">Contact</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
     <header>
         <h1>Jesse Folkers</h1>
         <div class="AboutMe">
-            <img src="../src/images/poppetje.png" alt="Hero image">
+            <img src="src/images/poppetje.png" alt="Hero image">
             <div>
                 <h2>Over Mij</h2>
                 <p>
-                    Ik ben Jesse Folkers, een 18-jarige student die graag bezig is met programmeren en designen. 
+                    Ik ben Jesse Folkers, een 18-jarige student die graag bezig is met programmeren en designen.
                 </p>
                 <p>
                     Ik ben
-                    momenteel bezig met het leren van HTML, CSS, tailwindCSS, JavaScript en ben ik bezig met het leren van designen.
+                    momenteel bezig met het leren van HTML, CSS, tailwindCSS, JavaScript en ben ik bezig met het leren
+                    van designen.
                     Ik wil eigenlijk altijd wel iets nieuws leren.
                 </p>
-                </p>
                 <p>
-                    Naast school en programmeren luister ik graag muziek, speel ik games en kijk ik graag films en series. Maar sport ik ook graag.
+                    Naast school en programmeren luister ik graag muziek, speel ik games en kijk ik graag films en
+                    series. Maar sport ik ook graag.
                 </p>
             </div>
         </div>
     </header>
-    <article>
-        <h2>Mijn Skills</h2>
-        <h3>Programming</h3>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>TailwindCSS</li>
-            <li>Design</li>
-        </ul>
+    <article class="skills">
+        <div>
+            <h2>Mijn Skills</h2>
+            <h3>Programming</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>TailwindCSS</li>
+            </ul>
+            <h3>Design</h3>
+            <ul>
+                <li>Figma</li>
+            </ul>
+            <div class="underConstruction" aria-hidden="true">
+                <h3>Andere Skills</h3>
+                <ul>
+
+                </ul>
+            </div>
+            <p>
+                Deze website is gemaakt met HTML, CSS en JavaScript. De styling is gedaan met CSS zelf.
+            </p>
+        </div>
     </article>
+    <article class="projects">
+        <h2>Projecten</h2>
+
+            <div>
+                <div class="projectCardHome1 projectCardHome">
+                    <p>[project name]</p>
+                    <img src="src/images/ProjectPlaceHolder.webp" alt="projectImage" class="projectImage">
+                    <p>dd-mm-yyyy</p>
+                </div>
+                <div class="projectCardHome2 projectCardHome">
+                    <p>[project name]</p>
+                    <img src="src/images/ProjectPlaceHolder.webp" alt="projectImage" class="projectImage">
+                    <p>dd-mm-yyyy</p>
+                </div>
+                <div class="projectCardHome3 projectCardHome">
+                    <p>[project name]</p>
+                    <img src="src/images/ProjectPlaceHolder.webp" alt="projectImage" class="projectImage">
+                    <p>dd-mm-yyyy</p>
+                </div>
+            </div>
+    </article>
+
+    <footer>
+        <table>
+            <tr>
+                <th>
+                    <h3>Contact</h3>
+                </th>
+                <th>
+                    <h3>socials</h3>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <p>Email: jessefolkers2006@gmail.com</p>
+                </td>
+                <td class="socials">
+                    <a href="https://www.instagram.com/poinsenops/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-instagram fa-xl""></i>
+                    </a>
+                    <a href="https://github.com/poinsenops" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github fa-xl""></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jesse-folkers-1b1b3b1b3/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin fa-xl""></i>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Telefoon: [telefoonnummer]</p>
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>adress: [straatnaam], [#], [stad]</p>
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+        </table>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/55d2efb2ba.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

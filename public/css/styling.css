@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: 'Black Clover';
-    src: url(../../src/fonts/BlackCloverFont.ttf);
+    src: url(../src/fonts/BlackCloverFont.ttf);
 }
 
 body {
@@ -19,19 +19,6 @@ body {
     margin: 0;
     padding: 0;
 }
-h2 {
-    font-weight: 300;
-    font-size: 1.25rem;
-    display: inline-block;
-    text-decoration: underline;
-}
-h3 {
-    font-size: 1rem;
-    font-weight: 300;
-    margin: 0;
-    text-decoration: underline;
-}
-
 
 nav {
     background-color: var(--Oxford-blue);
@@ -40,10 +27,12 @@ nav {
     justify-content: space-around;
     align-items: center;
 }
+
 nav a {
     color: var(--Isabelline);
     text-decoration: none;
 }
+
 nav ul {
     display: flex;
     justify-content: space-around;
@@ -58,6 +47,7 @@ header h1:first-child {
     margin: .5rem 0 0 1rem;
     padding: 0;
 }
+
 header h1::after {
     content: ' ';
     display: block;
@@ -66,52 +56,321 @@ header h1::after {
     background-color: var(--Eerie-Black);
     margin: 0 0 0 -1rem;
 }
+
 header img {
-    width: 49vw;
+    width: 45vw;
     object-fit: cover;
     filter: drop-shadow(1vw 1vw 0 #17171751);
+    margin: 0 0 0 1rem;
 }
+
 header div div p {
     font-size: .8rem;
     width: 45vw;
     font-weight: 300;
-    margin: 0 1rem 0 0;
+    margin: 0 0 0 0;
 }
+
 header div div p:not(:first-child) {
     font-size: .8rem;
     width: 45vw;
     font-weight: 300;
     margin: 1rem 1rem 0 0;
 }
+
 .AboutMe {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 2rem 0;
+    padding: 1rem 1rem;
     gap: 2vw;
 }
+
 header::after {
     content: ' ';
     display: block;
     width: 100vw;
     height: 1px;
     background-color: var(--Eerie-Black);
-    margin: 0;
+    position: relative;
+    right: -1rem;
+    margin: 0 0 -1rem -1rem;
+}
+
+article:first-of-type::after {
+    content: ' ';
+    display: block;
+    width: 100vw;
+    height: 1px;
+    background-color: var(--Eerie-Black);
+    margin: 1rem 0 0 -1rem;
 }
 
 article {
-    margin: 2rem 0;
-    padding: 0 1rem;
+    margin: 0 0 1rem 0;
+    padding: 1rem;
 }
-article ul li {
+
+article ul li,
+article p {
     font-size: .8rem;
     font-weight: 300;
     margin: 0;
 }
 
+.underConstruction {
+    display: none;
+}
+
+.underConstruction * {
+    display: none;
+}
+
+.projectImage {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.projectCardHome p:first-of-type {
+    position: relative;
+    top: 2.5rem;
+}
+
+.projectCardHome p:first-of-type::after {
+    position: relative;
+    content: ' ';
+    display: block;
+    width: 10rem;
+    height: 1px;
+    background-color: var(--Eerie-Black);
+    top: .1rem;
+}
+
+.projectCardHome p:nth-of-type(2) {
+    position: relative;
+    top: -2.5rem;
+}
+
+.projectCardHome p:nth-of-type(2)::before {
+    position: relative;
+    content: ' ';
+    display: block;
+    width: 10rem;
+    height: 1px;
+    background-color: var(--Eerie-Black);
+    top: 0rem;
+}
+
+.projectCardHome p {
+    text-align: center;
+}
+
+.projects {
+    position: relative;
+    top: -2rem;
+}
+
+.projects div {
+    display: flex;
+    flex: 4;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+}
+
+.projectCardHome3 {
+    margin: -3rem 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    order: -2;
+}
+
+.projectCardHome2,
+.projectCardHome1 {
+    width: 33%;
+    flex-grow: 1;
+    order: 1;
+}
+
+.projects div div {
+    position: relative;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2vh;
+}
+
+.projects h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 1.25rem;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--Oxford-blue);
+    color: var(--Isabelline);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+footer a {
+    color: var(--Isabelline);
+    text-decoration: none;
+}
+
+footer th,
+footer td {
+    text-align: left;
+    font-size: .8rem;
+    font-weight: 300;
+    padding: 0 1rem;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
 @media screen and (min-width: 720px) {
-    header img {
-        width: 25vw;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav a {
+        margin-left: 3rem;
+    }
+
+    nav ul {
+        margin-right: 3rem;
+    }
+    .AboutMe {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 2rem 0;
+        padding: 1rem 1rem;
+        gap: 2vw;
+    }
+
+    .AboutMe img {
+        width: 30vw;
+        order: 1;
         filter: drop-shadow(.5vw .5vw 0 #17171751);
+    }
+
+    .AboutMe div {
+        width: 40vw;
+        order: 0;
+        position: relative;
+        top: -12.5rem;
+    }
+
+    header div div p:not(:first-child) {
+        font-size: 1rem;
+        width: 35vw;
+        font-weight: 300;
+        margin: 1rem 1rem 0 0;
+    }
+
+    .skills {
+        width: 40vw;
+        position: relative;
+        top: -25rem;
+        left: 5.5rem;
+    }
+
+    .skills p,
+    .skills ul li {
+        font-size: 1rem;
+        font-weight: 300;
+        margin: 0;
+    }
+
+    article:first-of-type::after {
+        content: ' ';
+        display: block;
+        width: 40vw;
+        height: 1px;
+        background-color: var(--Eerie-Black);
+        position: relative;
+        top: -19rem;
+    }
+
+    .projects {
+        position: relative;
+        top: -60rem;
+        left: 50vw;
+        margin: 0;
+        padding: 0;
+        width: fit-content;
+    }
+
+    .projects div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        margin: -1rem;
+        padding: 0;
+        width: fit-content;
+    }
+
+    .projectCardHome {
+        width: 30%;
+        order: 0;
+        margin: -1rem;
+    }
+
+    .projects h2 {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin: -1rem;
+        margin-left: -3.5rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    header:after {
+        display: none;
+    }
+
+    footer {
+        margin-top: -55rem;
+        justify-content:start;
+    }
+
+    footer table {
+        margin-left: 3rem;
     }
 }

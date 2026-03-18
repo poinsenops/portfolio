@@ -48,39 +48,23 @@ nav ul {
     gap: 1rem;
 }
 
-.projects {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 3rem;
-    gap: 1rem;
+article {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 0 1rem;
 }
-
-.project-card {
-    position: relative;
-    width: 75vw;
-    border: solid;
-    padding: 0.5rem;
-    transition: transform 0.3s ease;
-    background-color: #EBEBEB;
-    overflow: hidden;
-    border-radius: 0.5rem;
-
-}
-
-.project-card:hover {
-    transform: scale(1.05);
-}
-
-.project-card a {
+.placeholder {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 90%;
+    max-width: 800px;
+    height: 60vh;
+    gap: 1rem;
+    margin: 0 auto;
 }
-.project-card img {
-    width: 75vw;
-}
+
 
 footer {
     background-color: var(--Oxford-blue);
@@ -113,17 +97,6 @@ footer td {
     margin-top: 1rem;
 }
 
-
-#shutterDoor {
-    display: none;
-}
-
-.project-image {
-    width: 100%;
-    height: 20rem;
-    object-fit: cover;
-}
-
 @media screen and (min-width: 720px) {
     nav {
         display: flex;
@@ -139,53 +112,8 @@ footer td {
         margin-right: 3rem;
     }
 
-    .projects {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 5rem;
-        justify-items: center;
-
-    }
-    
-    .project-card {
-        width: 25vw;
-        border: solid;
-        padding: 0.5rem;
-        transition: transform 0.3s ease;
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
-    }
-    
-    .project-card:hover {
-        transform: scale(1.05);
-    }
-
-    .project-card a {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .project-card img {
-        width: 25vw;
-        box-shadow: inset 0 -0.5rem -1rem rgba(0, 0, 0, 0.5);
-    }
-
-    #shutterDoor {
-        display: block;
-        transition: transform 1s ease;
-        position: absolute;
-        width: 100%;
-        height: 21rem;
-        top: 0;
-    }
-    
-    .project-card:hover #shutterDoor {
-        transform: translateY(-100%);
-    }
-
     footer {
-        justify-content:start;
+        justify-content: start;
     }
 
     footer table {

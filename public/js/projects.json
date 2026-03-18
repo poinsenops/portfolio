@@ -3,42 +3,42 @@
             "id": 1,
             "name": "Project One",
             "description": "Description for project one.",
-            "url": "http://example.com/project-one",
+            "url": "mockProjectPage.html",
             "image": "src/images/ProjectPlaceHolder.webp"
         },
         {
             "id": 2,
             "name": "Project Two",
             "description": "Description for project two.",
-            "url": "http://example.com/project-two",
+            "url": "mockProjectPage.html",
             "image": "src/images/ProjectPlaceHolder.webp"
         },
         {
             "id": 3,
             "name": "Project Three",
             "description": "Description for project three.",
-            "url": "http://example.com/project-three",
+            "url": "mockProjectPage.html",
             "image": "src/images/ProjectPlaceHolder.webp"
         },
         {
             "id": 4,
             "name": "Project Four",
             "description": "Description for project four.",
-            "url": "http://example.com/project-four",
+            "url": "mockProjectPage.html",
             "image": "src/images/ProjectPlaceHolder.webp"
         },
         {
             "id": 5,
             "name": "Project Five",
             "description": "Description for project five.",
-            "url": "http://example.com/project-five",
+            "url": "mockProjectPage.html",
             "image": "src/images/ProjectPlaceHolder.webp"
         },
         {
             "id": 6,
             "name": "Project Six",
             "description": "Description for project six.",
-            "url": "http://example.com/project-six",
+            "url": "mockProjectPage.html",
             "image": "src/images/ProjectPlaceHolder.webp"
-    }
-]
+        }
+    ]

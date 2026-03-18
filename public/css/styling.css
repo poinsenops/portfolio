@@ -12,6 +12,12 @@
     src: url(../src/fonts/BlackCloverFont.ttf);
 }
 
+.logo {
+    font-family: 'Black Clover', sans-serif;
+    font-size: 1.5rem;
+    margin: .5rem 0 0 0.5rem;
+    padding: 0;
+}
 body {
     background-color: var(--Isabelline);
     color: var(--Eerie-Black);

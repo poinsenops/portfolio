@@ -52,5 +52,8 @@ het doel van mijn portfolio website is om een overzichtelijke website met de pro
 
     bij de contact data word alleen de minimale data verzamelt ie benodigt is dus naam en email meer niet zoals aangeven dat mag volgens de AVG. (er worden bij dit prototype nog geen gegevens verzamelt omdat ik alleen een frondend heb en geen backend).
 
+### font
+    het font dat ik heb gebruikt "Black Clover font" is niet gratis voor commercieel gebruik wel voor persoonlijk gebruik als ik de website dus wel online wil zetten zou ik eerst de licentie halen op https://www.creativefabrica.com/ref/181983.
+
 ## Conclusie
 Dit PvE vormt de basis voor mijn portfolio-website. Het combineert de eisen van de opdrachtgever met mijn eigen wensen en must-haves. Door dit document als voorbeeld te gebruiken, kan ik gestructureerd aan mijn website werken en zorgen dat het eindproduct zowel functioneel als persoonlijk aansluit bij mijn doelen als beginnend developer.
